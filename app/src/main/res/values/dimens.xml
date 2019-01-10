@@ -1,0 +1,14 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="index_btn_margin">4dp</dimen>
+    <dimen name="index_btn_fondsize">18dp</dimen>
+    <dimen name="deviderHeight">0.5dp</dimen>
+    <dimen name="tag_width">20dp</dimen>
+    <dimen name="five_size">16dp</dimen>
+    <dimen name="four_size">18dp</dimen>
+    <dimen name="three_size">20dp</dimen>
+    <dimen name="two_size">22dp</dimen>
+    <dimen name="one_size">24dp</dimen>
+
+
+</resources>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <!--top-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@color/colorLightGray00">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="环保部.订货群"
+                android:textSize="30dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="8dp"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_school_black_24dp"
+                    android:gravity="center_vertical"
+                    android:text="3家分店" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:gravity="center_vertical"
+                    android:text="13订货员"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_directions_walk_black_24dp"
+                    android:gravity="center_vertical"
+                    android:text="1位采购员" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--btns-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+        <!--line_1-->
+        <LinearLayout style="@style/fourline_style"
+            android:gravity="clip_vertical"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="15dp">
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/ic_chat_black_24dp"-->
+                <!--android:layout_marginRight="4dp"/>-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/ic_chat_black_24dp"-->
+                <!--android:layout_marginEnd="4dp"/>-->
+            <TextView
+                android:id="@+id/tv_index_words"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:drawablePadding="5dp"
+                android:textSize="16dp"
+                android:autoLink="all"
+                android:text="共3家分店，申请共100条。未采购20条，可配送分店80条。"/>
+
+ <!--<android.support.design.widget.FloatingActionButton-->
+     <!--android:layout_width="wrap_content"-->
+     <!--android:layout_height="wrap_content"-->
+     <!--android:src="@drawable/ic_clear_all_black_24dp"-->
+     <!--app:borderWidth="0dp"-->
+     <!--android:backgroundTint="@color/colorLightGray"-->
+     <!--android:clickable="true"-->
+     <!--android:layout_marginRight="10dp"-->
+     <!--app:rippleColor="@color/colorGray"-->
+     <!--app:fabSize="normal"-->
+     <!--android:layout_marginTop="8dp"-->
+     <!--android:layout_marginBottom="8dp"-->
+     <!--/>-->
+
+        </LinearLayout>
+
+        <!--line_2-->
+        <LinearLayout style="@style/fourline_style">
+
+            <!--btn_6-->
+            <LinearLayout
+                style="@style/index_btn_background"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="0.9">
+                <Button
+                    style="@style/index_btn"
+
+                    android:drawableStart="@drawable/ic_index_btn03"
+                    android:text="@string/index_btns_06" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/index_btn_background"
+                android:layout_weight="1.1">
+                <Button
+                    android:id="@+id/btn_index_01"
+                    style="@style/index_btn"
+                    android:drawableStart="@drawable/ic_index_order"
+                    android:text="@string/index_btns_01"
+                    android:textAllCaps="false"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--middle_image_line1-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="05"
+                android:src="@drawable/ic_arrow_upward_black_24dp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="05"
+                android:src="@drawable/ic_arrow_downward_black_24dp" />
+
+        </LinearLayout>
+
+
+        <!--line_3-->
+        <LinearLayout style="@style/fourline_style">
+
+            <!--5-->
+            <LinearLayout
+                style="@style/index_btn_background"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="0.9">
+
+                <Button
+                    style="@style/index_btn"
+                    android:drawableStart="@drawable/ic_index_btn05"
+                    android:text="@string/index_btns_05" />
+
+            </LinearLayout>
+
+            <!--middle_img-->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1" />
+
+            <!--4 -->
+            <LinearLayout
+                style="@style/index_btn_background"
+                android:layout_weight="1">
+
+
+                <Button
+                    android:id="@+id/btn_index_02"
+                    style="@style/index_btn"
+                    android:drawableStart="@drawable/ic_index_btn02"
+                    android:text="@string/index_btns_02" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--middle_image_line2-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:orientation="horizontal"
+
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="05"
+                android:src="@drawable/ic_arrow_upward_black_24dp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="05"
+                android:src="@drawable/ic_arrow_downward_black_24dp" />
+
+        </LinearLayout>
+
+        <!--line_4-->
+        <LinearLayout style="@style/fourline_style">
+
+            <LinearLayout
+                style="@style/index_btn_background"
+                android:layout_weight="1">
+
+                <Button
+                    style="@style/index_btn"
+                    android:drawableStart="@drawable/ic_index_btn04"
+                    android:text="@string/index_btns_04" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:src="@drawable/ic_next2" />
+
+            <!-- 3_btn -->
+            <LinearLayout
+                style="@style/index_btn_background"
+                android:layout_weight="1">
+
+                <Button
+                    style="@style/index_btn"
+                    android:drawableStart="@drawable/ic_index_finished"
+                    android:text="@string/index_btns_03" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--bottom-->
+    <LinearLayout style="@style/fourline_style" />
+
+
+</LinearLayout>
